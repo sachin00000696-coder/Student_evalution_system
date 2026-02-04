@@ -1,0 +1,16 @@
+System design 
+                    EvaluationEngine (abstract)
+                           |
+        -----------------------------------------------
+        |                     |                      |
+   BTechEvaluation      MCAEvaluation         PhDEvaluation
+
+
+EvaluationEngine  HAS-A  ModerationRule
+
+ModerationRule (interface)
+        |
+--------------------------------
+|              |               |
+Attendance   Difficulty     Manual
+Moderation   Moderation     Moderation
